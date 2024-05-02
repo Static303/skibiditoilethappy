@@ -3,40 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goofy Website</title>
+    <title>Life Changing Button</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #ffeecc;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        h1 {
-            font-size: 3em;
+            background-color: #f0f0f0;
             text-align: center;
-            color: #ff4500;
-            text-shadow: 2px 2px 4px #000000;
+            padding-top: 50px;
         }
-        p {
-            font-size: 1.2em;
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
             text-align: center;
-            color: #000080;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
         }
-        .goofy-image {
-            display: block;
-            margin: 20px auto;
-            border-radius: 50%;
-            box-shadow: 0 0 10px #000;
+        button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to the Goofy Website!</h1>
-    <img class="goofy-image" src="https://via.placeholder.com/150" alt="Goofy Image">
-    <p>This website is all about having fun and spreading smiles!</p>
+    <h1>Press this and your whole life will change</h1>
+    <button onclick="redirect()">Press Me!</button>
+
+    <script>
+        function redirect() {
+            window.location.href = "https://example.com"; // Replace "https://example.com" with your desired URL
+        }
+    </script>
 </body>
 </html>
